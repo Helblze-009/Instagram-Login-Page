@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <style>
+        body {
+
+            color: rgba(38, 38, 38, 1);
+            height: 100vh;
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            line-height: 18px;
+            width: 100vw;
+        }
+
+        .container {
+            flex-direction: row;
+            flex-wrap: nowrap;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+
+
+        }
+
+        .logo {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            align-content: center;
+            align-items: stretch;
+            justify-content: center;
+            margin-top: 40px;
+            width: 260px;
+            border: 1px solid rgb(219, 219, 219);
+            height: 350px;
+            background-color: white;
+            padding: 40px;
+
+
+
+
+        }
+
+        .another {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            align-content: center;
+            align-items: stretch;
+            justify-content: center;
+            margin-left: 130px;
+        }
+
+        img {
+
+            padding: 0px 50px 30px 50px;
+            margin-top: -24px;
+
+
+        }
+
+        .insta:hover {
+            cursor: pointer;
+        }
+
+        input {
+            all: unset;
+            padding: 10px;
+            border: 1px solid rgb(219, 219, 219);
+            margin-top: 10px;
+            border-radius: 4px;
+        }
+
+        .btn {
+            background-color: rgba(0, 149, 246, 0.3);
+            text-align: center;
+            color: rgb(255, 253, 253);
+            padding: 5px;
+            margin-top: 17px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .btn:hover {
+            cursor: pointer;
+            color: black;
+            text-decoration: underline;
+        }
+
+        .fb {
+            display: inline-block;
+            margin-top: 8px;
+            position: relative;
+            top: 3px;
+            height: 16px;
+            width: 16px;
+            background-repeat: no-repeat;
+            background-position: -414px -259px;
+            transform: scale(1.1);
+        }
+
+        .account {
+            background-color: white;
+            border: 1px solid rgb(219, 219, 219);
+            text-align: center;
+            padding: 15px;
+            margin: 24px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: n0-wrap;
+            width: 310px;
+            align-content: center;
+            align-items: stretch;
+            justify-content: center;
+            margin-left: 0;
+
+
+        }
+
+        footer {
+
+            position: relative;
+            display: flex;
+
+            width: 70%;
+            padding: 0;
+            margin-left: 250px;
+
+        }
+
+        footer ul {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+
+
+
+        }
+
+        footer ul li {
+            margin-right: 30px;
+            /* color: #aaa; */
+            /* text-transform: uppercase; */
+            font-size: 13px;
+            line-height: 2.5;
+
+        }
+
+        li:hover {
+            color: rgb(56, 81, 133);
+            cursor: pointer;
+            text-decoration: underline;
+
+        }
+
+        .Forgot:hover {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+
+        .sign:hover {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+
+        select:hover {
+            cursor: pointer;
+
+        }
+
+        .log-in:hover {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" style="display:flex;">
+        <div class="another">
+            <div class="logo">
+                <img class="insta"
+                    src="https://www.instagram.com/static/images/web/logged_out_wordmark.png/7a252de00b20.png" alt="">
+                <input type="text" placeholder="Phone number,username, or email">
+                <input type="password" placeholder="Password">
+                <button class="btn">Log In</button>
+                <div class="or" style="display:flex;
+            margin-top: 20px;
+            flex-direction: row;
+            align-items: center;">
+
+                    <div style="background-color: rgb(173, 167, 167);
+                height: 0.5px;
+                width: 110px;">
+                    </div>
+                    <div style="font-weight:600;
+                color:gray;
+                padding:0px 10px 0px 10px;">OR</div>
+                    <div style="background-color: rgb(173, 167, 167);
+                height: 0.5px;
+                width: 110px;">
+                    </div>
+
+                </div>
+                <div style="text-align: center;
+            margin-top: 20px;
+            color: rgb(56,81,133);
+            font-weight: 600;
+            font-size: 13px;
+            transform: scale(1.1);">
+                    <a href="http://facebook.com" target="_blank" rel="noopener noreferrer"><span class="fb"
+                            style="background-image: url(https://www.instagram.com/static/bundles/es6/sprite_core_32f0a4f27407.png/32f0a4f27407.png);">
+
+                        </span></a>
+                    <a href="http://facebook.com" style="text-decoration:none;
+                    " target="_blank">
+                        <span class="log-in">Log In With Facebook</span>
+                    </a>
+                </div>
+                <div class="Forgot" style="color: rgb(0,55,157);
+            text-align:center;
+            padding-top:20px;">
+                    Forgot Password ?
+                </div>
+            </div>
+            <div class="account">
+                Dont't Have An Account?
+                <span class="sign" style="color:rgb(0,149,246,1) ;
+            font-weight:600;
+            margin-left: 5px;">Sign Up</span>
+            </div>
+            <div style="text-align:center;
+            /* border: 2px solid red; */
+            width: 337px;
+            
+            ">Get The App</div>
+            <div style="text-align:center;
+            
+                            margin-top: 10px;
+                            margin-left:0;
+                            /* border: 2px solid red; */
+                            width: 329px;
+                            padding: 10px;
+                            transform: scale(0.9);">
+                <a href="http://www.apple.com/in/app-store/" target="_blank"><img src="./images/apple.png" alt="" style="width:150px;
+                                    margin: 0;
+                            padding: 0;
+                            border: 0;
+                            font: inherit;
+                            vertical-align: baseline;
+                            "></a>
+                <a href="http://play.google.com" target="_blank"><img src="./images/Google.png" alt="" style="width:150px;
+                                margin: 0;
+                        padding: 0;
+                        border: 0;
+                        font: inherit;
+                        vertical-align: baseline;"></a>
+
+
+
+
+            </div>
+
+        </div>
+
+
+    </div>
+    <footer style="height:10%;">
+        <div>
+            <ul>
+                <li>Meta</li>
+                <li>About</li>
+                <li>Blog</li>
+                <li>Jobs</li>
+                <li>Help</li>
+                <li>API</li>
+                <li>Privacy</li>
+                <li>Terms</li>
+                <li>Top Accounts</li>
+                <li>Hastags</li>
+                <li>Locations</li>
+                <li>Instagram Lite</li>
+                <li>Contact Uploading & Non-Users</li>
+            </ul>
+        </div>
+    </footer>
+    <div style="
+    text-align: center;
+    
+    margin-top: 15px;">
+
+        <span style="text-align: center;
+        margin-left:50px">
+            <select name="" id="" style="border:none ;">
+                <option value="">English</option>
+                <option value="">संस्कृतम्</option>
+                <option value="">বাংলা</option>
+                <option value="">ગુજરાતી</option>
+                <option value="">हिन्दी</option>
+            </select>
+            ©2022 Instagram from Meta</span>
+    </div>
+</body>
+
+</html>
